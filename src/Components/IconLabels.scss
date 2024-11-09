@@ -1,0 +1,59 @@
+.icon-labels-wrapper {
+  max-width: 70%;
+  margin: 0 auto; // Center the container horizontally
+  border-radius: 15px; // Add rounded corners
+  background-image: url('./Assets/b5.png'); // Use the uploaded image as background
+  background-size: cover; // Ensure the background covers the whole area
+  background-position: center; // Center the background image
+}
+
+.icon-labels {
+  display: flex;
+  justify-content: space-around; // Spread out the icons evenly
+  align-items: center;
+  text-align: center;
+  padding: 20px 0; // Provide some padding around the component
+}
+
+.icon-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .icon {
+    font-size: 1.5rem; // Adjust the icon size
+    color: #333; // Adjust the icon color to match your design
+    background-color: #f0e5d8; // Soft gold background, adjust color as needed
+    border-radius: 50%; // Makes the background circle
+    width: 3rem; // Width for the circle
+    height: 3rem; // Height for the circle
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; // Space between the icon and the label text
+    padding: 10px; // Add padding to reduce icon visual size within the circle
+  }
+
+  p {
+    font-size: 16px; // Adjust font size for the label
+    color: #D8A958; // Text color to match the image
+  }
+}
+
+.enterprise-service {
+  margin-top: 40px;   
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  text-align: center;
+
+  .h2 {
+    color: #D8A958;
+    margin-bottom: 5px; // Add some space between the h2 and p
+  }
+
+  .jh {
+    font-size: 18px; // Slightly smaller font size for the subtitle
+    color: #c4c3c3;    
+  }
+}

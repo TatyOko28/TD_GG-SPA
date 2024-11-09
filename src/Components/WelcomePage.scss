@@ -1,0 +1,116 @@
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; // This will distribute the sections
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('./Assets/5f.png') no-repeat center center/cover; // Adjust the path accordingly
+  color: #0e0202; // White text for visibility
+  text-align: center;
+  padding: 20px 0; // Padding at the top and bottom
+
+  @media (max-width: 1200px) {
+    height: 80vh; // Reduce the height for screens up to 1200px wide
+  }
+
+  @media (max-width: 768px) {
+    height: 60vh; // Reduce the height for screens up to 768px wide
+    padding: 10px 0; // Adjust the padding
+  }
+
+  @media (max-width: 480px) {
+    height: 50vh; // Reduce the height for screens up to 480px wide
+    padding: 5px 0; // Adjust the padding
+  }
+}
+
+.text-section {
+  width: 100%; // Ensures text sections span the full container width
+  padding: 0 30px; // Padding on the sides for alignment
+  margin-top: -20px;
+
+  &.top {
+    align-self: flex-start; // Aligns top section to the top
+  }
+
+  .hi{
+    font-size: 28px;
+    color: #D8A958;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  &.middle {
+    align-self: center; // Centers middle section
+  }
+
+  &.bottom {
+    align-self: flex-end; // Aligns bottom section to the bottom
+  }
+
+  @media (max-width: 1200px) {
+    padding: 0 20px; // Adjust padding for screens up to 1200px wide
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 15px; // Adjust padding for screens up to 768px wide
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 10px; // Adjust padding for screens up to 480px wide
+  }
+}
+
+.featured-products {
+  font-size: 18px; // Slightly smaller font size for the subtitle
+    color: #666;
+    
+    .fg{
+      font-size: 28px;
+      color: #D8A958;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  
+
+  h1 {
+    font-size: 1.5rem;
+    color: #D8A958;
+
+    @media (max-width: 768px) {
+      font-size: 1.2rem; // Adjust font size for screens up to 768px wide
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1rem; // Adjust font size for screens up to 480px wide
+    }
+  }
+}
+
+h1 {
+  font-size: 28px;
+  color: #D8A958;
+  font-weight: bold;
+  margin-bottom: 5px;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem; // Adjust font size for screens up to 768px wide
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1rem; // Adjust font size for screens up to 480px wide
+  }
+}
+
+p {
+  font-size: 1.2rem;
+
+  @media (max-width: 768px) {
+    font-size: 1rem; // Adjust font size for screens up to 768px wide
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem; // Adjust font size for screens up to 480px wide
+  }
+}

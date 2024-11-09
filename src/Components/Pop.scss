@@ -1,0 +1,103 @@
+.luxury-jet-contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.85); // Black transparent background
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px; // Max width for the container
+  width: 90%;
+  margin: 0 auto; // Automatically adjust margin on all sides, centering the form
+  border: 1px solid gold; // Gold border
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Optional shadow for better visibility
+
+  .form-container {
+    color: white;
+    font-size: 1rem; // Responsive base font size
+
+    h1 {
+      font-size: 1.5rem; // Responsive heading size
+      margin-bottom: 10px;
+      color: gold;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      input, textarea {
+        margin-bottom: 10px;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.1); // Translucent input background
+        border: 1px solid #ccc; // Subtle border
+        color: white;
+        font-size: 0.875rem; // Responsive font size for input
+
+        &::placeholder {
+          color: #ddd; // Placeholder color
+        }
+      }
+
+      button[type="submit"] {
+        padding: 10px;
+        background: white; // White background for submit button
+        color: black;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem; // Responsive font size for button
+
+        &:hover {
+          background: darkgoldenrod; // Darker gold on hover
+        }
+      }
+    }
+
+    .note {
+      font-size: 0.75rem; // Smaller font size for notes
+      margin-top: 10px;
+    }
+
+    .sidebar {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      .contact-button {
+        background: none;
+        border-radius: 5px; // Rounded corners
+        color: gold;
+        padding: 5px 10px;
+        font-size: 1rem; // Responsive font size for buttons
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        
+        &:hover {
+          background: gold; // Hover effect
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .luxury-jet-contact-form .form-container {
+    font-size: 0.9rem; // Smaller base font size for smaller screens
+  }
+}
+
+@media (max-width: 480px) {
+  .luxury-jet-contact-form {
+    padding: 10px; // Less padding for very small screens
+    flex-direction: column; // Stack elements vertically on small screens
+  }
+
+  .luxury-jet-contact-form .form-container form {
+    flex-direction: column;
+  }
+}

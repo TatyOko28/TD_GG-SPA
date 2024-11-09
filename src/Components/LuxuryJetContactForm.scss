@@ -1,0 +1,145 @@
+.luxury-jet-contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; // Full screen height
+  background: url('./Assets/gg.jpeg') no-repeat center center/cover; // Adjust this path to your actual image
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75); // Dark overlay for text visibility
+    z-index: 1;
+  }
+
+  .luxury-jet-contact-form {
+    display: flex;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.45); // Black transparent background
+    border-radius: 10px;
+    z-index: 2;
+    padding: 20px;
+    max-width: 600px; // Max width for the container
+    width: 90%;
+    border: 1px solid gold; // Gold border
+
+    @media (max-width: 1024px) {
+      padding: 15px;
+      max-width: 80%;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 10px;
+      max-width: 90%;
+    }
+
+    @media (max-width: 480px) {
+      padding: 5px;
+      max-width: 95%;
+    }
+
+    .sidebar {
+      padding: 10px;
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 10px; // Adjust spacing
+
+        li {
+          margin-bottom: 10px; // Space between items
+          color: gold; // Gold color for text
+          font-size: 16px;
+          cursor: pointer;
+        }
+      }
+
+      .contact-button {
+        background: none;
+        border-radius: 5px; // Rounded corners
+        color: gold;
+        padding: 5px 10px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        
+
+        &:hover {
+          background: gold; // Hover effect
+          color: black;
+        }
+      }
+    }
+
+    .form-container {
+      flex: 2;
+      padding: 20px;
+      color: white;
+      font-size: 16px;
+
+      @media (max-width: 768px) {
+        padding: 15px;
+      }
+
+      @media (max-width: 480px) {
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        input, textarea {
+          margin-bottom: 10px;
+          padding: 10px;
+          background: rgba(255, 255, 255, 0.1); // Translucent input background
+          border: 1px solid #ccc; // Subtle border
+          color: white;
+          font-size: 14px;
+
+          &::placeholder {
+            color: #ddd; // Placeholder color
+          }
+        }
+
+        button[type="submit"] {
+          padding: 10px;
+          background: white; // White background for submit button
+          color: black;
+          border: none;
+          cursor: pointer;
+          font-size: 16px;
+
+          &:hover {
+            background: darkgoldenrod; // Darker gold on hover
+          }
+        }
+      }
+
+      .note {
+        font-size: 12px;
+        margin-top: 10px;
+      }
+    }
+  }
+}

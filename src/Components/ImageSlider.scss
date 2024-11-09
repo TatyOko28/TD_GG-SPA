@@ -1,0 +1,26 @@
+.slider {
+    position: relative;
+    height: 100vh; // Adjust height as needed
+    width: 100%; // Make sure slider is full width
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1s ease;
+    opacity: 0;
+  
+    &.active {
+      opacity: 1;
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+      display: block; // Ensures img tag behaves correctly
+    }
+  }
+  

@@ -1,0 +1,53 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+
+  &.scrolled {
+    background-color: #f8f8f8;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    color: #f8f8f8;
+
+    .logo {
+      height: 30px; // Adjust the size as needed
+      margin-right: 10px;      
+    }
+
+    .logo-text {
+      font-family: Arial, sans-serif; // Change to match the font in the image
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+ 
+
+   
+  }
+
+  @media (max-width: 768px) {
+    .menu-button {
+      display: block;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .menu.expanded {
+      display: block;
+    }
+  }
+

@@ -1,0 +1,37 @@
+.services-section {
+    background: url('./Assets/5mm.png') no-repeat center center/cover;
+    color: rgb(16, 2, 2);
+    text-align: center;
+    padding: 50px 0; // Adjust padding as needed
+    position: relative;
+  
+    .content {
+      position: relative;
+      max-width: 1200px; // Adjust based on your design needs
+      margin: 0 auto;
+    }
+  
+    h1, h2 {
+      margin: 20px 0;
+      font-size: 2rem;
+      color: #D8A958;
+    }
+    .hn{
+      font-size: 18px; // Slightly smaller font size for the subtitle
+      color: #666;
+    }  
+    
+  
+    .service-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  
+      p {
+        flex: 1 1 30%; // Adjust based on your design needs
+        margin: 10px;
+      }
+    } 
+  
+  }
+  

@@ -1,0 +1,160 @@
+html, body {
+  width: 100%;
+  overflow-x: hidden; // This prevents horizontal scrolling
+  margin: 0;
+  padding: 0;
+  height: 100%; // Ensure body takes full height
+}
+
+// Ensure that the root div also does not create overflow
+#root {
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.background-image {
+  min-height: 100vh; // This ensures the div takes at least the full viewport height
+  width: 100vw;  // This ensures the div takes the full viewport width
+ background: url('./Assets/fg.png') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(234, 237, 230);   
+  text-align: center;
+  font-weight: bold;  
+  margin: 0;      
+  padding: 0;
+  margin-bottom: 20px;
+
+  .content {
+    flex: 1; // This makes sure the content takes up all the available space
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; // Center the content horizontally
+    text-align: center;
+    margin-right: 55px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  // Responsive design adjustments
+  @media (max-width: 1200px) {
+    min-height: 80vh;
+
+    h1 {
+      font-size: 3.0rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    min-height: 60vh;
+    padding: 10px;
+
+    h1 {
+      font-size: 2.0rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    min-height: 50vh;
+    padding: 20px;
+
+    h1 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .open-popup-btn {
+    align-self: center; // Center the button
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #D8A958;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 30px;
+
+    .gi{
+      font-size: 20px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+    }
+
+    &:hover {
+      background-color: #b4df8b;
+    }
+  }
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  .popup-inner {   
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+
+    h2 {
+      margin: 0 0 10px;
+    }
+
+    p {
+      margin: 0 0 20px;
+    }
+
+    .close-popup-btn {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+
+      &:hover {
+        background-color: #c82333;
+      }
+    }
+  }
+}

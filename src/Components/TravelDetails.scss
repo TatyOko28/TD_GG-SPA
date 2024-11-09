@@ -1,0 +1,162 @@
+.travel-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+
+  .travel-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    
+    .travel-item {
+      display: flex;
+      align-items: center;
+      margin: 0 20px;
+      font-size: 16px;
+      
+      .ps {
+        margin: 0 10px 0 0;
+      }
+      
+      .detail-button {
+        background-color: #d4a373;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #bf8a50;
+        }
+      }
+    }
+  }
+
+  .more-feedback-button {
+    margin: 20px 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #666;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  }
+
+  .magazine-section {
+    text-align: center;
+    margin-top: 40px;
+
+    h3 {
+      font-size: 18px;
+      color: #d4a373;
+      margin: 0;
+    }
+
+    h4 {
+      font-size: 24px;
+      color: #333;
+      margin: 10px 0 0;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .travel-items {
+      flex-direction: column;
+      align-items: center;
+
+      .travel-item {
+        margin: 10px 0;
+      }
+    }
+
+    .magazine-section {
+      h3 {
+        font-size: 16px;
+      }
+
+      h4 {
+        font-size: 22px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px 15px;
+
+    .travel-items {
+      flex-direction: column;
+      align-items: center;
+
+      .travel-item {
+        margin: 10px 0;
+        font-size: 14px;
+
+        .detail-button {
+          padding: 8px 16px;
+        }
+      }
+    }
+
+    .more-feedback-button {
+      padding: 8px 16px;
+    }
+
+    .magazine-section {
+      margin-top: 30px;
+
+      h3 {
+        font-size: 14px;
+      }
+
+      h4 {
+        font-size: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px 10px;
+
+    .travel-items {
+      flex-direction: column;
+      align-items: center;
+
+      .travel-item {
+        margin: 10px 0;
+        font-size: 12px;
+
+        .detail-button {
+          padding: 6px 12px;
+        }
+      }
+    }
+
+    .more-feedback-button {
+      padding: 6px 12px;
+    }
+
+    .magazine-section {
+      margin-top: 20px;
+
+      h3 {
+        font-size: 12px;
+      }
+
+      h4 {
+        font-size: 18px;
+      }
+    }
+  }
+}
